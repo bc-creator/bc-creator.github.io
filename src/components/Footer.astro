@@ -1,0 +1,33 @@
+---
+import { NAVER_BLOG_URL } from '../consts';
+
+const today = new Date();
+---
+
+<footer>
+	&copy; {today.getFullYear()} bc-creator
+	<div class="links">
+		<a href={NAVER_BLOG_URL} target="_blank" rel="noopener">네이버 블로그</a>
+		<a href="/rss.xml">RSS</a>
+	</div>
+</footer>
+<style>
+	footer {
+		padding: 2em 1em 6em 1em;
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		color: rgb(var(--gray));
+		text-align: center;
+	}
+	.links {
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+		margin-top: 1em;
+	}
+	.links a {
+		color: rgb(var(--gray));
+	}
+	.links a:hover {
+		color: rgb(var(--gray-dark));
+	}
+</style>

@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+import { NAVER_BLOG_URL } from '../consts';
+---
+
+<Layout
+	title="소개"
+	description="bc-creator 블로그 소개"
+	pubDate={new Date('2026-11-14T00:00:00+09:00')}
+>
+	<p>작업하며 배운 것과 일상을 기록하는 블로그입니다.</p>
+	<p>
+		네이버 블로그도 함께 운영합니다:
+		<a href={NAVER_BLOG_URL} target="_blank" rel="noopener">{NAVER_BLOG_URL}</a>
+	</p>
+</Layout>
